@@ -7,6 +7,7 @@
 [![Course](https://img.shields.io/badge/Course-ITE%20387%3A%20Advanced%20Programming-blue.svg?style=for-the-badge&logo=codeforces&logoColor=white)](https://github.com)
 [![Academic Level](https://img.shields.io/badge/Academic%20Level-3rd%20Year%20%7C%201st%20Semester-0284c7.svg?style=for-the-badge)](https://github.com)
 [![Architecture](https://img.shields.io/badge/Architecture-Vanilla%20ES6%2B%20%7C%20Progressive%20Enhancement-10b981.svg?style=for-the-badge&logo=javascript&logoColor=white)](https://github.com)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-brightgreen?style=for-the-badge&logo=githubpages&logoColor=white)](https://zula-stdnt.github.io/barangay-tablon-community-portal/)
 [![Status](https://img.shields.io/badge/Status-Completed%20%26%20Optimized-success.svg?style=for-the-badge)](https://github.com)
 
 <p align="center">
@@ -14,7 +15,11 @@
   Built from the ground up to embody the software engineering principles and curriculum competencies taught in <strong>ITE 387: Advanced Programming</strong>.
 </p>
 
-[Explore UI Tour](#visual-ui-showcase--tour) • [Academic Lessons](#academic-lessons--curriculum-alignment-ite-387) • [Tech Stack](#technology-stack--specifications) • [How to Run](#local-setup--execution-guide) • [GitHub Upload](#step-by-step-github-deployment-guide)
+<p align="center">
+  🌐 <strong>Live Website:</strong> <a href="https://zula-stdnt.github.io/barangay-tablon-community-portal/"><strong>https://zula-stdnt.github.io/barangay-tablon-community-portal/</strong></a>
+</p>
+
+[🌐 Live Demo](https://zula-stdnt.github.io/barangay-tablon-community-portal/) • [Explore UI Tour](#visual-ui-showcase--tour) • [Academic Lessons](#academic-lessons--curriculum-alignment-ite-387) • [Tech Stack](#technology-stack--specifications) • [How to Run](#local-setup--execution-guide) • [GitHub Upload](#step-by-step-github-deployment-guide)
 
 ---
 
@@ -249,10 +254,14 @@ Comprehensive public health center directory, educational institutions, and dire
 
 ### Execution Options
 
-#### Option A: Direct Browser Launch (Zero Server Required)
+#### Option A: Instant Live Web Demo (GitHub Pages)
+The project is hosted live on GitHub Pages with zero setup needed:
+👉 **[https://zula-stdnt.github.io/barangay-tablon-community-portal/](https://zula-stdnt.github.io/barangay-tablon-community-portal/)**
+
+#### Option B: Direct Local Browser Launch (Zero Server Required)
 Thanks to the progressive enhancement architecture, you can simply browse to the project folder in File Explorer and **double-click [`index.html`](index.html)**. It will open and run with zero CORS errors and full interactivity.
 
-#### Option B: Via VS Code Live Server
+#### Option C: Via VS Code Live Server
 1. Open this repository in Visual Studio Code.
 2. Install the **Live Server** extension by Ritwick Dey if not already installed.
 3. Right-click [`index.html`](index.html) and click **"Open with Live Server"**.
@@ -261,7 +270,7 @@ Thanks to the progressive enhancement architecture, you can simply browse to the
    http://127.0.0.1:5501/index.html
    ```
 
-#### Option C: Via XAMPP Apache
+#### Option D: Via XAMPP Apache
 1. Move or clone this folder into your XAMPP web root directory:
    ```text
    C:\xampp\htdocs\
