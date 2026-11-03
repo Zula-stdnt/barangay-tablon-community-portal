@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & Contact | Barangay Tablon</title>
+    <meta name="description" content="Learn about the services offered by Barangay Tablon, office hours, and contact information.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="barangay_tablon_logo.jpg" alt="Barangay Tablon Logo" class="brand-logo">
+                Barangay Tablon
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="officials.html">Officials</a>
+                <a href="attractions.html">Attractions</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="events.html">Events</a>
+                <a href="facilities.html">Facilities</a>
+            </div>
+        </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="page-hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> Services & Contact
+            </div>
+            <h1>Barangay Services & Contact</h1>
+            <p>We are here to serve you. Find out how we can help and how to reach us.</p>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="section animate-on-scroll">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Programs and assistance provided by the Barangay Local Government Unit</p>
+            
+            <div class="grid-2">
+                <div class="service-card">
+                    <div class="service-icon">📄</div>
+                    <div>
+                        <h4>Barangay Clearance & Certificates</h4>
+                        <p>Issuance of barangay clearances, certificate of residency, indigency, and other essential local government documents required for employment, business, and school.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <div>
+                        <h4>Community Programs</h4>
+                        <p>Support initiatives including drug rehabilitation assistance, livelihood training, and various social welfare programs targeted at empowering residents.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👨‍👩‍👧‍👦</div>
+                    <div>
+                        <h4>People's Day Assistance</h4>
+                        <p>Special events offering free medical check-ups, rice distribution, scholarship assistance, job application help, and late birth registration.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📶</div>
+                    <div>
+                        <h4>Public Wi-Fi & Digital Access</h4>
+                        <p>Free public Wi-Fi access in designated areas to help students and residents with online research, communications, and digital transactions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resident Feedback & Inquiry Section [ITE 387: Lab 01 & Lab 03 - Consolidated Form State] -->
+    <section class="section animate-on-scroll" style="background-color: var(--primary-bg);">
+        <div class="container">
+            <h2 class="section-title">Resident Feedback & Inquiries</h2>
+            <p class="section-subtitle">Have a question or community concern? Submit an inquiry directly to the Barangay Desk.</p>
+
+            <div class="feedback-card">
+                <form id="residentFeedbackForm" class="feedback-form" novalidate>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="fullName">Full Name <span class="required">*</span></label>
+                            <input class="form-input" type="text" id="fullName" name="fullName" placeholder="e.g. Juan Dela Cruz" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address <span class="required">*</span></label>
+                            <input class="form-input" type="email" id="email" name="email" placeholder="e.g. juan@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="contactNumber">Contact Number</label>
+                            <input class="form-input" type="tel" id="contactNumber" name="contactNumber" placeholder="e.g. 0912-345-6789">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="category">Inquiry Category</label>
+                            <select class="form-select" id="category" name="category">
+                                <option value="general">General Inquiry</option>
+                                <option value="clearance">Document / Clearance Assistance</option>
+                                <option value="welfare">Community Welfare & Social Aid</option>
+                                <option value="safety">Infrastructure & Public Safety</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label class="form-label" for="message">Your Message / Concern <span class="required">*</span></label>
+                            <textarea class="form-textarea" id="message" name="message" placeholder="Please describe your question or concern in detail..." required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="reset" class="btn btn-outline" style="padding: 0.8rem 1.5rem;">Clear Form</button>
+                        <button type="submit" class="btn btn-primary" style="padding: 0.8rem 1.75rem;">Submit Inquiry 📨</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section class="section section-dark animate-on-scroll">
+        <div class="container">
+            <div class="grid-2" style="align-items: center;">
+                
+                <div>
+                    <h2 class="section-title" style="text-align: left;">Contact & Office Hours</h2>
+                    <p style="margin-bottom: 2rem;">Visit the Barangay Hall or reach out to us via phone or social media for inquiries and assistance.</p>
+                    
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Purok 5, National Highway<br>Tablon, Cagayan de Oro City<br>Misamis Oriental, 9000</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div>
+                                <h4>Office Hours</h4>
+                                <p>Monday to Friday<br>8:00 AM - 5:00 PM<br>(Closed on holidays)</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+63 (88) 855-1464</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📘</div>
+                            <div>
+                                <h4>Facebook</h4>
+                                <p><a href="https://www.facebook.com/search/top?q=Barangay%20Tablon" target="_blank" style="color: var(--primary); text-decoration: underline; font-weight: 600;">Search "Barangay Tablon"</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>tablon@cagayandeoro.gov.ph<br><em>(City LGU route)</em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <!-- Google Maps Iframe -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15783.5670868297!2d124.717614!3d8.4819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ff8d9c2226875b%3A0xc38d721115abdb92!2sTablon%2C%20Cagayan%20de%20Oro%2C%20Misamis%20Oriental!5e0!3m2!1sen!2sph!4v1700000000000!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Barangay Tablon</h3>
+                    <p>A premier urban and industrial barangay in Cagayan de Oro City, committed to progress, community welfare, and sustainable development.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="officials.html">Officials</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="attractions.html">Attractions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="gallery.html">Photo Gallery</a></li>
+                        <li><a href="events.html">Events & Festivals</a></li>
+                        <li><a href="facilities.html">Schools & Health</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p>📍 Purok 5, National Highway<br>Tablon, Cagayan de Oro City<br>Misamis Oriental, 9000</p>
+                    <p>📞 +63 (88) 855-1464</p>
+                    <p>🕒 Mon-Fri, 8:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Barangay Tablon Community Website. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

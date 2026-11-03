@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | Barangay Tablon</title>
+    <meta name="description" content="View photos of our community, events, nature, and infrastructure in Barangay Tablon.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="barangay_tablon_logo.jpg" alt="Barangay Tablon Logo" class="brand-logo">
+                Barangay Tablon
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="officials.html">Officials</a>
+                <a href="attractions.html">Attractions</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="events.html">Events</a>
+                <a href="facilities.html">Facilities</a>
+            </div>
+        </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="page-hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> Gallery
+            </div>
+            <h1>Photo Gallery</h1>
+            <p>Glimpses of life, events, and scenery in Barangay Tablon.</p>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="section animate-on-scroll">
+        <div class="container">
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="community">Community</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+            </div>
+
+            <div class="gallery-grid">
+                
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-category="events" data-img="images/festival.jfif" data-caption="Barangay Fiesta Celebration">
+                    <img src="images/festival.jfif" alt="Barangay Fiesta Celebration">
+                    <div class="gallery-overlay">
+                        <p>Barangay Fiesta Celebration</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" data-category="infrastructure" data-img="images/barangay hall.jfif" data-caption="Barangay Hall">
+                    <img src="images/barangay hall.jfif" alt="Barangay Hall">
+                    <div class="gallery-overlay">
+                        <p>Barangay Hall</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-category="community" data-img="images/people' day event.jfif" data-caption="People's Day Event">
+                    <img src="images/people' day event.jfif" alt="People's Day Event">
+                    <div class="gallery-overlay">
+                        <p>People's Day Event</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" data-category="infrastructure" data-img="images/industrial area.jfif" data-caption="Industrial Area">
+                    <img src="images/industrial area.jfif" alt="Industrial Area">
+                    <div class="gallery-overlay">
+                        <p>Industrial Area View</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" data-category="events" data-img="images/sto.nino fiestia.png" data-caption="Feast of Sto. Niño Parade">
+                    <img src="images/sto.nino fiestia.png" alt="Feast of Sto. Niño Parade">
+                    <div class="gallery-overlay">
+                        <p>Feast of Sto. Niño Parade</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" data-category="community" data-img="images/community clean up drive.jpg" data-caption="Community Clean-up Drive">
+                    <img src="images/community clean up drive.jpg" alt="Community Clean-up Drive">
+                    <div class="gallery-overlay">
+                        <p>Community Clean-up Drive</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-nav lightbox-prev">&lsaquo;</button>
+        <div class="lightbox-content">
+            <img src="" alt="Gallery Image" id="lightboxImg">
+            <div class="img-placeholder" style="display:none; color: white;">
+                <span class="placeholder-icon" style="font-size: 3rem;">📸</span>
+                <span style="font-size: 1.2rem; margin-top: 1rem;">Image Placeholder</span>
+            </div>
+            <div class="lightbox-caption" id="lightboxCaption">Caption</div>
+        </div>
+        <button class="lightbox-nav lightbox-next">&rsaquo;</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Barangay Tablon</h3>
+                    <p>A premier urban and industrial barangay in Cagayan de Oro City, committed to progress, community welfare, and sustainable development.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="officials.html">Officials</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="attractions.html">Attractions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="gallery.html">Photo Gallery</a></li>
+                        <li><a href="events.html">Events & Festivals</a></li>
+                        <li><a href="facilities.html">Schools & Health</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p>📍 Purok 5, National Highway<br>Tablon, Cagayan de Oro City<br>Misamis Oriental, 9000</p>
+                    <p>📞 +63 (88) 855-1464</p>
+                    <p>🕒 Mon-Fri, 8:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Barangay Tablon Community Website. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ECMAScript Module Entrypoint [ITE 387: Lab 01 & Lab 02] -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+# ==============================================================================
+# Git Ignore - Barangay Tablon Community Portal
+# ITE 387: Advanced Programming Mini Project
+# ==============================================================================
+
+# IDE & Editor Configurations
+.vscode/
+.idea/
+.kilocode/
+*.sublime-project
+*.sublime-workspace
+
+# Operating System Metadata & Thumbnail Caches
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Temporary Files, Logs & Backups
+*.log
+*.tmp
+*.bak
+*.swp
+*~

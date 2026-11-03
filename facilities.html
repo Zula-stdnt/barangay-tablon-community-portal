@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities | Barangay Tablon</title>
+    <meta name="description" content="Information on schools, health centers, and emergency hotlines in Barangay Tablon.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="barangay_tablon_logo.jpg" alt="Barangay Tablon Logo" class="brand-logo">
+                Barangay Tablon
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="officials.html">Officials</a>
+                <a href="attractions.html">Attractions</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="events.html">Events</a>
+                <a href="facilities.html">Facilities</a>
+            </div>
+        </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="page-hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> Facilities
+            </div>
+            <h1>Schools & Health Centers</h1>
+            <p>Essential public facilities and emergency contact information.</p>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <section class="section animate-on-scroll">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; align-items: start;">
+                
+                <!-- Left Column: Facilities -->
+                <div class="facilities-column">
+                    
+                    <!-- Educational Institutions -->
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Educational Institutions</h2>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 3rem;">
+                        
+                        <div class="facility-card">
+                            <div class="facility-icon school">🏫</div>
+                            <span class="facility-tag public">Public Elementary</span>
+                            <h4>Tablon Elementary School</h4>
+                            <p>Located along the National Highway, serving the primary educational needs of the barangay's youth.</p>
+                            <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 0.5rem;">📞 Contact: (088) 855-3340</p>
+                        </div>
+
+                        <div class="facility-card">
+                            <div class="facility-icon school">🏫</div>
+                            <span class="facility-tag public">Public High School</span>
+                            <h4>Tablon National High School</h4>
+                            <p>Situated in Purok 1, providing accessible secondary education to students in Tablon and nearby areas.</p>
+                        </div>
+
+                        <div class="facility-card">
+                            <div class="facility-icon school">🎓</div>
+                            <span class="facility-tag private">Higher Education</span>
+                            <h4>Mindanao Bible College</h4>
+                            <p>A tertiary educational institution located in Baloy, Tablon, offering specialized higher education programs.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Health Centers -->
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Healthcare Facilities</h2>
+                    <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
+                        
+                        <div class="facility-card" style="border-left: 4px solid #f43f5e;">
+                            <div class="facility-icon health">🏥</div>
+                            <span class="facility-tag public">Primary Care Facility</span>
+                            <h4>CDO City Hospital – Tablon Primary Care</h4>
+                            <p>Located at Purok 4, Umalag St., this PhilHealth-accredited facility serves as an extension of the CDO City Hospital to provide accessible healthcare to eastern barangays.</p>
+                            
+                            <h5 style="margin-top: 1rem; margin-bottom: 0.5rem; font-size: 0.95rem;">Available Services:</h5>
+                            <ul style="font-size: 0.9rem; color: var(--text-light); padding-left: 1.2rem; list-style-type: disc;">
+                                <li>Outpatient consultations</li>
+                                <li>Animal Bite Treatment Center</li>
+                                <li>Pharmacy, Laboratory, and Diagnostics</li>
+                                <li>Minor surgery and Family Planning</li>
+                            </ul>
+                            
+                            <p style="font-size: 0.85rem; font-weight: 500; margin-top: 1rem; margin-bottom: 0;">📞 Contact: 0927-424-8752</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Emergency Hotlines -->
+                <div class="hotlines-sidebar">
+                    <div class="hotline-card">
+                        <h3>🚨 Emergency Hotlines</h3>
+                        <p style="font-size: 0.9rem; margin-bottom: 1.5rem; color: var(--text);">Keep these numbers saved for immediate assistance during emergencies.</p>
+
+                        <div class="hotline-911">
+                            <div class="big-number">911</div>
+                            <p>Centralized Emergency<br>(CDRRMD / Oro Rescue)</p>
+                        </div>
+
+                        <h4 style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--text);">Bureau of Fire Protection</h4>
+                        <div class="hotline-item">
+                            <span class="name">Lapasan Station</span>
+                            <span class="number">0997-526-7466</span>
+                        </div>
+                        <div class="hotline-item">
+                            <span class="name">Cogon Station</span>
+                            <span class="number">0926-752-0623</span>
+                        </div>
+
+                        <h4 style="font-size: 1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--text);">Police (COCPO)</h4>
+                        <div class="hotline-item">
+                            <span class="name">Station 6 (Puerto)</span>
+                            <span class="number">0998-598-6987</span>
+                        </div>
+                        <div class="hotline-item">
+                            <span class="name">Station 3 (Agora)</span>
+                            <span class="number">0905-214-9550</span>
+                        </div>
+                        <div class="hotline-item">
+                            <span class="name">COCPO HQ</span>
+                            <span class="number">0917-771-3663</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Barangay Tablon</h3>
+                    <p>A premier urban and industrial barangay in Cagayan de Oro City, committed to progress, community welfare, and sustainable development.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="officials.html">Officials</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="attractions.html">Attractions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="gallery.html">Photo Gallery</a></li>
+                        <li><a href="events.html">Events & Festivals</a></li>
+                        <li><a href="facilities.html">Schools & Health</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p>📍 Purok 5, National Highway<br>Tablon, Cagayan de Oro City<br>Misamis Oriental, 9000</p>
+                    <p>📞 +63 (88) 855-1464</p>
+                    <p>🕒 Mon-Fri, 8:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Barangay Tablon Community Website. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
