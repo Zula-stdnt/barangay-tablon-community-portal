@@ -14,26 +14,26 @@
   Built from the ground up to embody the software engineering principles and curriculum competencies taught in <strong>ITE 387: Advanced Programming</strong>.
 </p>
 
-[Explore UI Tour](#-visual-ui-showcase--tour) • [Academic Lessons](#-academic-lessons--curriculum-alignment-ite-387) • [Tech Stack](#-technology-stack--specifications) • [How to Run](#-local-setup--execution-guide) • [GitHub Upload](#-step-by-step-github-deployment-guide)
+[Explore UI Tour](#visual-ui-showcase--tour) • [Academic Lessons](#academic-lessons--curriculum-alignment-ite-387) • [Tech Stack](#technology-stack--specifications) • [How to Run](#local-setup--execution-guide) • [GitHub Upload](#step-by-step-github-deployment-guide)
 
 ---
 
 </div>
 
-## 📑 Table of Contents
-1. [Project Overview & Background](#-project-overview--background)
-2. [Academic Lessons & Curriculum Alignment (ITE 387)](#-academic-lessons--curriculum-alignment-ite-387)
-3. [Core System Features](#-core-system-features)
-4. [Visual UI Showcase & Tour](#-visual-ui-showcase--tour)
-5. [Technology Stack & Specifications](#-technology-stack--specifications)
-6. [Repository Structure & File Inventory](#-repository-structure--file-inventory)
-7. [Local Setup & Execution Guide](#-local-setup--execution-guide)
-8. [Step-by-Step GitHub Deployment Guide](#-step-by-step-github-deployment-guide)
-9. [Academic Attribution & Credits](#-academic-attribution--credits)
+## <a id="table-of-contents"></a>📑 Table of Contents
+1. [Project Overview & Background](#project-overview--background)
+2. [Academic Lessons & Curriculum Alignment (ITE 387)](#academic-lessons--curriculum-alignment-ite-387)
+3. [Core System Features](#core-system-features)
+4. [Visual UI Showcase & Tour](#visual-ui-showcase--tour)
+5. [Technology Stack & Specifications](#technology-stack--specifications)
+6. [Repository Structure & File Inventory](#repository-structure--file-inventory)
+7. [Local Setup & Execution Guide](#local-setup--execution-guide)
+8. [Step-by-Step GitHub Deployment Guide](#step-by-step-github-deployment-guide)
+9. [Academic Attribution & Credits](#academic-attribution--credits)
 
 ---
 
-## 📖 Project Overview & Background
+## <a id="project-overview--background"></a><a id="-project-overview--background"></a><a id="project-overview"></a>📖 Project Overview & Background
 
 The **Barangay Tablon Community Website** is a responsive multi-page public portal developed as an academic mini-project for **ITE 387: Advanced Programming**. It serves as an official digital information hub and citizen engagement platform connecting the **Barangay Local Government Unit (BLGU)** with its residents, local workforce, and visitors.
 
@@ -45,7 +45,7 @@ The **Barangay Tablon Community Website** is a responsive multi-page public port
 
 ---
 
-## 🎓 Academic Lessons & Curriculum Alignment (ITE 387)
+## <a id="academic-lessons--curriculum-alignment-ite-387"></a><a id="-academic-lessons--curriculum-alignment-ite-387"></a><a id="academic-lessons"></a>🎓 Academic Lessons & Curriculum Alignment (ITE 387)
 
 This mini-project was designed, organized, and refactored to directly demonstrate practical mastery of the topics covered in the **ITE 387: Advanced Programming** syllabus (specifically Track B Web & Database Engineering Labs and Track A Modern JavaScript/Component Paradigms):
 
@@ -96,7 +96,7 @@ All dynamic HTML elements strictly adhere to the authoritative 4-step creation p
 
 ---
 
-## ⚡ Core System Features
+## <a id="core-system-features"></a><a id="-core-system-features"></a><a id="core-features"></a>⚡ Core System Features
 
 * 📱 **Fully Responsive Layout:** Fluid navigation and grid layouts designed for mobile phones, tablets, and ultra-wide desktop monitors.
 * 🍔 **Mobile Drawer Navigation:** Touch-friendly hamburger menu with backdrop blur overlay and automatic page highlighting.
@@ -109,7 +109,7 @@ All dynamic HTML elements strictly adhere to the authoritative 4-step creation p
 
 ---
 
-## 📸 Visual UI Showcase & Tour
+## <a id="visual-ui-showcase--tour"></a><a id="-visual-ui-showcase--tour"></a><a id="ui-tour"></a><a id="ui-showcase"></a>📸 Visual UI Showcase & Tour
 
 Below is an extensive visual walkthrough of the Barangay Tablon portal, captured directly from the running application:
 
@@ -183,7 +183,7 @@ Comprehensive public health center directory, educational institutions, and dire
 
 ---
 
-## 🛠️ Technology Stack & Specifications
+## <a id="technology-stack--specifications"></a><a id="-technology-stack--specifications"></a><a id="tech-stack"></a><a id="technology-stack"></a>🛠️ Technology Stack & Specifications
 
 | Layer | Technology | Details & Implementation |
 | :--- | :--- | :--- |
@@ -198,7 +198,7 @@ Comprehensive public health center directory, educational institutions, and dire
 
 ---
 
-## 📂 Repository Structure & File Inventory
+## <a id="repository-structure--file-inventory"></a><a id="-repository-structure--file-inventory"></a><a id="repository-structure"></a>📂 Repository Structure & File Inventory
 
 ```text
 7-17 mini project barangay website/
@@ -241,7 +241,7 @@ Comprehensive public health center directory, educational institutions, and dire
 
 ---
 
-## 💻 Local Setup & Execution Guide
+## <a id="local-setup--execution-guide"></a><a id="-local-setup--execution-guide"></a><a id="how-to-run"></a><a id="local-setup"></a>💻 Local Setup & Execution Guide
 
 ### Prerequisites
 * Any modern web browser (Google Chrome, Brave, Mozilla Firefox, Microsoft Edge, Safari).
@@ -274,7 +274,7 @@ Thanks to the progressive enhancement architecture, you can simply browse to the
 
 ---
 
-## 🚀 Step-by-Step GitHub Deployment Guide
+## <a id="step-by-step-github-deployment-guide"></a><a id="-step-by-step-github-deployment-guide"></a><a id="github-upload"></a><a id="deployment-guide"></a>🚀 Step-by-Step GitHub Deployment Guide
 
 Follow these commands in your PowerShell or Git Bash terminal to publish this project to your GitHub profile:
 
@@ -303,7 +303,7 @@ git push -u origin main
 
 ---
 
-## 👥 Academic Attribution & Credits
+## <a id="academic-attribution--credits"></a><a id="-academic-attribution--credits"></a><a id="credits"></a>👥 Academic Attribution & Credits
 
 * **Course:** ITE 387 – Advanced Programming
 * **Program:** Bachelor of Science in Information Technology (BSIT)
