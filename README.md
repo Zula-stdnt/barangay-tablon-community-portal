@@ -4,11 +4,11 @@
 ### **Academic Mini-Project for ITE 387: Advanced Programming**
 **3rd Year, 1st Semester — Information Technology**
 
-[![Course](https://img.shields.io/badge/Course-ITE%20387%3A%20Advanced%20Programming-blue.svg?style=for-the-badge&logo=codeforces&logoColor=white)](https://github.com)
-[![Academic Level](https://img.shields.io/badge/Academic%20Level-3rd%20Year%20%7C%201st%20Semester-0284c7.svg?style=for-the-badge)](https://github.com)
-[![Architecture](https://img.shields.io/badge/Architecture-Vanilla%20ES6%2B%20%7C%20Progressive%20Enhancement-10b981.svg?style=for-the-badge&logo=javascript&logoColor=white)](https://github.com)
+![Course](https://img.shields.io/badge/Course-ITE%20387%3A%20Advanced%20Programming-blue.svg?style=for-the-badge&logo=codeforces&logoColor=white)
+![Academic Level](https://img.shields.io/badge/Academic%20Level-3rd%20Year%20%7C%201st%20Semester-0284c7.svg?style=for-the-badge)
+![Architecture](https://img.shields.io/badge/Architecture-Vanilla%20ES6%2B%20%7C%20Progressive%20Enhancement-10b981.svg?style=for-the-badge&logo=javascript&logoColor=white)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-brightgreen?style=for-the-badge&logo=githubpages&logoColor=white)](https://zula-stdnt.github.io/barangay-tablon-community-portal/)
-[![Status](https://img.shields.io/badge/Status-Completed%20%26%20Optimized-success.svg?style=for-the-badge)](https://github.com)
+![Status](https://img.shields.io/badge/Status-Completed%20%26%20Optimized-success.svg?style=for-the-badge)
 
 <p align="center">
   A modern, responsive, and data-driven civic portal engineered for <strong>Barangay Tablon</strong>, Cagayan de Oro City, Misamis Oriental, Philippines.<br>
