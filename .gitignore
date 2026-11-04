@@ -26,3 +26,11 @@ $RECYCLE.BIN/
 *.bak
 *.swp
 *~
+
+# AI Agent & Workspace Rules
+.gemini/
+
+# UI Screenshot Archives (Archived Locally)
+UI_Screenshots/
+ui_mobile_screenshot/
+ui_mobile_screenshots/
