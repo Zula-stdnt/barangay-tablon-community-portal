@@ -19,7 +19,7 @@
   🌐 <strong>Live Website:</strong> <a href="https://zula-stdnt.github.io/barangay-tablon-community-portal/"><strong>https://zula-stdnt.github.io/barangay-tablon-community-portal/</strong></a>
 </p>
 
-[🌐 Live Demo](https://zula-stdnt.github.io/barangay-tablon-community-portal/) • [Explore Pages](#application-pages--directory) • [Academic Lessons](#academic-lessons--curriculum-alignment-ite-387) • [Tech Stack](#technology-stack--specifications) • [How to Run](#local-setup--execution-guide) • [GitHub Upload](#step-by-step-github-deployment-guide)
+[🌐 Live Demo](https://zula-stdnt.github.io/barangay-tablon-community-portal/) • [Explore UI Tour](#visual-ui-showcase--tour) • [Academic Lessons](#academic-lessons--curriculum-alignment-ite-387) • [Tech Stack](#technology-stack--specifications) • [How to Run](#local-setup--execution-guide) • [GitHub Upload](#step-by-step-github-deployment-guide)
 
 ---
 
@@ -29,7 +29,7 @@
 1. [Project Overview & Background](#project-overview--background)
 2. [Academic Lessons & Curriculum Alignment (ITE 387)](#academic-lessons--curriculum-alignment-ite-387)
 3. [Core System Features](#core-system-features)
-4. [Application Pages & Directory](#application-pages--directory)
+4. [Visual UI Showcase & Tour](#visual-ui-showcase--tour)
 5. [Technology Stack & Specifications](#technology-stack--specifications)
 6. [Repository Structure & File Inventory](#repository-structure--file-inventory)
 7. [Local Setup & Execution Guide](#local-setup--execution-guide)
@@ -114,9 +114,11 @@ All dynamic HTML elements strictly adhere to the authoritative 4-step creation p
 
 ---
 
-## <a id="application-pages--directory"></a><a id="visual-ui-showcase--tour"></a><a id="-visual-ui-showcase--tour"></a><a id="ui-tour"></a><a id="ui-showcase"></a>🌐 Application Pages & Module Directory
+## <a id="visual-ui-showcase--tour"></a><a id="-visual-ui-showcase--tour"></a><a id="ui-tour"></a><a id="ui-showcase"></a><a id="application-pages--directory"></a>📸 Visual UI Showcase & Tour
 
-The portal is published live at [**https://zula-stdnt.github.io/barangay-tablon-community-portal/**](https://zula-stdnt.github.io/barangay-tablon-community-portal/). Below is a complete overview of the portal's pages, features, and academic learning components:
+The portal is published live at [**https://zula-stdnt.github.io/barangay-tablon-community-portal/**](https://zula-stdnt.github.io/barangay-tablon-community-portal/). Below is a comprehensive visual walkthrough and page directory captured directly from the running application:
+
+### Application Page Directory
 
 | Page | File Route | Features & Academic Capabilities |
 | :--- | :--- | :--- |
@@ -128,6 +130,76 @@ The portal is published live at [**https://zula-stdnt.github.io/barangay-tablon-
 | **Photo Gallery** | [`gallery.html`](gallery.html) | Responsive image grid with category filtering and full-screen accessible modal lightbox with keyboard shortcuts (<kbd>Esc</kbd>, <kbd>→</kbd>, <kbd>←</kbd>). |
 | **Festivals & Events** | [`events.html`](events.html) | Annual cultural event calendar (Feast of Sr. Sto. Niño, Higalaay Festival, Christmas Village) rendered dynamically with date formatting. |
 | **Facilities & Hotlines** | [`facilities.html`](facilities.html) | Educational institutions, CDO City Hospital primary care clinic, and responsive one-tap emergency calling hotlines (911 Central, BFP Fire Stations, COCPO Police). |
+
+---
+
+### 1. Home Page — Hero & Demographic Metrics
+The landing page greets visitors with a bold glassmorphic hero banner, followed by animated statistical counter cards summarizing population, land area, and economic status.
+
+| Landing Page Hero | Community Overview & Demographic Metrics |
+| :---: | :---: |
+| <img src="UI_Screenshots/Screenshot%20(1293).png" alt="Home Hero Banner" width="100%"> | <img src="UI_Screenshots/Screenshot%20(1294).png" alt="Overview and Statistics" width="100%"> |
+| *Hero section with CTA buttons and official badge* | *Key metrics: 24,578 population, 22.08 km², 2nd CDO Industrial Hub* |
+
+---
+
+### 2. About the Barangay — History, Vision & Mission
+Features the historical journey from early timber-cutting settlements (*"tablon"*) to the 1984 Nestlé milestone, alongside official Vision/Mission statements and geographical coordinates.
+
+| Community Profile & Territory Map | Vision, Mission & Location Data |
+| :---: | :---: |
+| <img src="UI_Screenshots/Screenshot%20(1296).png" alt="About Community Overview" width="100%"> | <img src="UI_Screenshots/Screenshot%20(1301).png" alt="Vision and Mission" width="100%"> |
+| *Community introduction and territorial overview map* | *Official BLGU Vision, Mission, and Demographic data cards* |
+
+---
+
+### 3. Barangay Governance — Dynamic Officials Directory
+Rendered dynamically from [`js/modules/data.js`](js/modules/data.js) via the 4-step DOM lifecycle, displaying the complete roster of elected and appointed leaders for public transparency.
+
+<div align="center">
+  <img src="UI_Screenshots/Screenshot%20(1304).png" alt="Barangay Officials Roster" width="90%">
+  <p><em>Dynamic leadership hierarchy: Punong Barangay, Sangguniang Barangay Kagawads, and Administrative Officers</em></p>
+</div>
+
+---
+
+### 4. Tourist Attractions & Landmarks (Interactive Filter)
+Demonstrates functional array filtering (`.filter()`). Visitors can toggle between landmarks, nature spots, and recreational areas in real time.
+
+<div align="center">
+  <img src="UI_Screenshots/Screenshot%20(1308).png" alt="Attractions Showcase" width="90%">
+  <p><em>Category-filtered cards: Nestlé Philippines Factory, Sto. Niño Chapel, and Our Lady of Guadalupe Pilgrimage Site</em></p>
+</div>
+
+---
+
+### 5. Citizen Services & Interactive Feedback Desk
+Outlines document clearance procedures (Residency, Indigency, Business Clearances) and provides an interactive form implementing consolidated object state and `localStorage` persistence.
+
+| Barangay Public Services | Resident Feedback & Inquiries Desk |
+| :---: | :---: |
+| <img src="UI_Screenshots/Screenshot%20(1311).png" alt="Services Directory" width="100%"> | <img src="UI_Screenshots/Screenshot%20(1313).png" alt="Feedback Form" width="100%"> |
+| *Clearances, certificates, and community welfare aid programs* | *Interactive feedback form with live validation and toast notifications* |
+
+---
+
+### 6. Photo Gallery & Annual Cultural Celebrations
+A multi-category photo gallery equipped with hover overlays and an interactive modal lightbox, accompanied by the annual calendar of cultural events.
+
+| Community Photo Gallery Grid | Annual Festivals & Events |
+| :---: | :---: |
+| <img src="UI_Screenshots/Screenshot%20(1317).png" alt="Photo Gallery" width="100%"> | <img src="UI_Screenshots/Screenshot%20(1318).png" alt="Festivals and Events" width="100%"> |
+| *6-photo responsive grid with category filtering and hover captions* | *Feast of Sr. Sto. Niño, Higalaay Festival, and Christmas Village* |
+
+---
+
+### 7. Essential Public Facilities & Emergency Hotlines
+Comprehensive public health center directory, educational institutions, and direct dispatch hotlines for emergency response.
+
+| Educational Institutions & 911 Hotline | CDO City Hospital — Tablon Primary Care |
+| :---: | :---: |
+| <img src="UI_Screenshots/Screenshot%20(1320).png" alt="Facilities & Hotlines" width="100%"> | <img src="UI_Screenshots/Screenshot%20(1324).png" alt="City Hospital Clinic" width="100%"> |
+| *Schools (Elementary, High School, College) and Emergency 911* | *PhilHealth-accredited primary care clinic services and hotlines* |
 
 ---
 
@@ -170,6 +242,7 @@ The portal is published live at [**https://zula-stdnt.github.io/barangay-tablon-
 │   │   ├── toast.js            # Dynamic toast notification alerts
 │   │   └── feedback.js         # Consolidated form state handler & localStorage persistence
 │   └── main.js                 # Self-contained, dual-compatible application orchestrator
+├── UI_Screenshots/             # Full collection of application UI screenshots (32 images)
 ├── barangay_tablon_logo.png    # Official transparent high-resolution seal (2048x2048)
 ├── about.html                  # History, Vision/Mission, Demographics, & Google Maps
 ├── attractions.html            # Category-filtered landmark & recreation gallery

@@ -30,7 +30,6 @@ $RECYCLE.BIN/
 # AI Agent & Workspace Rules
 .gemini/
 
-# UI Screenshot Archives (Archived Locally)
-UI_Screenshots/
+# Mobile UI Screenshot Archives (Archived Locally)
 ui_mobile_screenshot/
 ui_mobile_screenshots/
