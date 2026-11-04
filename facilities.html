@@ -12,7 +12,7 @@
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="index.html" class="nav-brand">
-                <img src="barangay_tablon_logo.jpg" alt="Barangay Tablon Logo" class="brand-logo">
+                <img src="barangay_tablon_logo.png" alt="Barangay Tablon Logo" class="brand-logo">
                 Barangay Tablon
             </a>
             <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
@@ -48,21 +48,21 @@
     <!-- Main Content Grid -->
     <section class="section animate-on-scroll">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; align-items: start;">
+            <div class="facilities-layout">
                 
                 <!-- Left Column: Facilities -->
                 <div class="facilities-column">
                     
                     <!-- Educational Institutions -->
                     <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Educational Institutions</h2>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 3rem;">
+                    <div class="facilities-grid">
                         
                         <div class="facility-card">
                             <div class="facility-icon school">🏫</div>
                             <span class="facility-tag public">Public Elementary</span>
                             <h4>Tablon Elementary School</h4>
                             <p>Located along the National Highway, serving the primary educational needs of the barangay's youth.</p>
-                            <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 0.5rem;">📞 Contact: (088) 855-3340</p>
+                            <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.75rem;">📞 Contact: <a href="tel:0888553340" style="color: var(--primary); font-weight: 600;">(088) 855-3340</a></p>
                         </div>
 
                         <div class="facility-card">
@@ -83,7 +83,7 @@
 
                     <!-- Health Centers -->
                     <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Healthcare Facilities</h2>
-                    <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
+                    <div class="health-facilities-grid">
                         
                         <div class="facility-card" style="border-left: 4px solid #f43f5e;">
                             <div class="facility-icon health">🏥</div>
@@ -99,7 +99,7 @@
                                 <li>Minor surgery and Family Planning</li>
                             </ul>
                             
-                            <p style="font-size: 0.85rem; font-weight: 500; margin-top: 1rem; margin-bottom: 0;">📞 Contact: 0927-424-8752</p>
+                            <p style="font-size: 0.85rem; font-weight: 500; margin-top: 1rem; margin-bottom: 0;">📞 Contact: <a href="tel:09274248752" style="color: var(--primary); font-weight: 600;">0927-424-8752</a></p>
                         </div>
 
                     </div>
@@ -110,35 +110,35 @@
                 <div class="hotlines-sidebar">
                     <div class="hotline-card">
                         <h3>🚨 Emergency Hotlines</h3>
-                        <p style="font-size: 0.9rem; margin-bottom: 1.5rem; color: var(--text);">Keep these numbers saved for immediate assistance during emergencies.</p>
+                        <p style="font-size: 0.9rem; margin-bottom: 1.5rem; color: var(--text);">Keep these numbers saved for immediate assistance during emergencies. Tap any number to call.</p>
 
-                        <div class="hotline-911">
+                        <a href="tel:911" class="hotline-911" title="Tap to call 911" style="display: block; text-decoration: none;">
                             <div class="big-number">911</div>
-                            <p>Centralized Emergency<br>(CDRRMD / Oro Rescue)</p>
-                        </div>
+                            <p>Centralized Emergency<br>(CDRRMD / Oro Rescue)<br><span style="display: inline-block; margin-top: 0.35rem; font-size: 0.8rem; text-decoration: underline; opacity: 0.95;">📞 Tap to Call 911</span></p>
+                        </a>
 
                         <h4 style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--text);">Bureau of Fire Protection</h4>
                         <div class="hotline-item">
                             <span class="name">Lapasan Station</span>
-                            <span class="number">0997-526-7466</span>
+                            <a href="tel:09975267466" class="number" title="Call Lapasan Fire Station">0997-526-7466</a>
                         </div>
                         <div class="hotline-item">
                             <span class="name">Cogon Station</span>
-                            <span class="number">0926-752-0623</span>
+                            <a href="tel:09267520623" class="number" title="Call Cogon Fire Station">0926-752-0623</a>
                         </div>
 
                         <h4 style="font-size: 1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--text);">Police (COCPO)</h4>
                         <div class="hotline-item">
                             <span class="name">Station 6 (Puerto)</span>
-                            <span class="number">0998-598-6987</span>
+                            <a href="tel:09985986987" class="number" title="Call Police Station 6">0998-598-6987</a>
                         </div>
                         <div class="hotline-item">
                             <span class="name">Station 3 (Agora)</span>
-                            <span class="number">0905-214-9550</span>
+                            <a href="tel:09052149550" class="number" title="Call Police Station 3">0905-214-9550</a>
                         </div>
                         <div class="hotline-item">
                             <span class="name">COCPO HQ</span>
-                            <span class="number">0917-771-3663</span>
+                            <a href="tel:09177713663" class="number" title="Call COCPO HQ">0917-771-3663</a>
                         </div>
                     </div>
                 </div>

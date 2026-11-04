@@ -315,51 +315,74 @@
 
     container.innerHTML = '';
 
-    // Punong Barangay
+    // 1. Punong Barangay (Executive Leader Card)
     const pbCard = create(
       'div',
-      { className: 'featured-card', style: { marginBottom: '2rem' } },
-      create('h3', { style: { fontSize: '1.5rem', marginBottom: '0.5rem', color: 'var(--primary)' } }, `${OFFICIALS_DATA.punongBarangay.title}:`),
-      create('p', { style: { fontSize: '1.3rem', fontWeight: '600', margin: '0' } }, OFFICIALS_DATA.punongBarangay.name)
+      { className: 'official-lead-card' },
+      create('div', { className: 'official-badge' }, '🎖️ Punong Barangay / Chief Executive'),
+      create('h3', { className: 'official-lead-name' }, OFFICIALS_DATA.punongBarangay.name),
+      create('p', { className: 'official-lead-subtitle' }, 'Head of the Barangay Local Government Unit & Sangguniang Barangay')
     );
     container.appendChild(pbCard);
 
-    // Divider
-    const createDivider = () =>
+    // 2. Sangguniang Barangay Members (Kagawads Grid)
+    const kagawadGrid = create('div', { className: 'kagawads-grid' });
+    OFFICIALS_DATA.kagawads.forEach((kagawadName, index) => {
+      const tile = create(
+        'div',
+        { className: 'kagawad-tile' },
+        create('div', { className: 'kagawad-num' }, `Council Member ${index + 1}`),
+        create('div', { className: 'kagawad-name' }, kagawadName)
+      );
+      kagawadGrid.appendChild(tile);
+    });
+
+    const kagawadsSection = create(
+      'div',
+      { className: 'officials-group-card' },
       create(
         'div',
-        { style: { textAlign: 'center', margin: '2rem 0' } },
-        create('hr', { style: { border: 'none', borderTop: '2px solid var(--primary)', width: '50px', margin: '0 auto' } })
-      );
-
-    container.appendChild(createDivider());
-
-    // Kagawads
-    const kagawadList = create('ul', { style: { listStyle: 'none', padding: '0', margin: '0', fontSize: '1.3rem' } });
-    OFFICIALS_DATA.kagawads.forEach((name) => {
-      kagawadList.appendChild(create('p', { style: { margin: '0.5rem 0' } }, name));
-    });
-
-    const kagawadsCard = create(
-      'div',
-      { className: 'featured-card', style: { marginBottom: '2rem' } },
-      create('h3', { style: { fontSize: '1.5rem', marginBottom: '0.5rem', color: 'var(--primary)' } }, 'Barangay Kagawads:'),
-      kagawadList
+        { className: 'officials-group-header' },
+        create('span', { className: 'official-badge' }, '🏛️ Legislative Council'),
+        create('h3', { className: 'officials-group-title' }, 'Barangay Kagawads')
+      ),
+      kagawadGrid
     );
-    container.appendChild(kagawadsCard);
+    container.appendChild(kagawadsSection);
 
-    container.appendChild(createDivider());
-
-    // Administrative staff
+    // 3. Administrative Officers Grid (SK, Secretary, Treasurer)
+    const adminGrid = create('div', { className: 'admin-staff-grid' });
     OFFICIALS_DATA.administrativeStaff.forEach((official) => {
-      const adminCard = create(
+      let icon = '📋';
+      if (official.role.includes('SK')) icon = '⚡';
+      if (official.role.includes('Treasurer')) icon = '💰';
+
+      const staffCard = create(
         'div',
-        { className: 'featured-card', style: { marginBottom: '2rem' } },
-        create('h3', { style: { fontSize: '1.5rem', marginBottom: '0.5rem', color: 'var(--primary)' } }, `${official.role}:`),
-        create('p', { style: { fontSize: '1.3rem', fontWeight: '600', margin: '0' } }, official.name)
+        { className: 'admin-staff-card' },
+        create(
+          'div',
+          { className: 'staff-icon-role' },
+          create('span', { className: 'staff-icon' }, icon),
+          create('span', { className: 'staff-role' }, official.role)
+        ),
+        create('div', { className: 'staff-name' }, official.name)
       );
-      container.appendChild(adminCard);
+      adminGrid.appendChild(staffCard);
     });
+
+    const adminSection = create(
+      'div',
+      { className: 'officials-group-card' },
+      create(
+        'div',
+        { className: 'officials-group-header' },
+        create('span', { className: 'official-badge' }, '👥 Administrative Officers'),
+        create('h3', { className: 'officials-group-title' }, 'Barangay Administration')
+      ),
+      adminGrid
+    );
+    container.appendChild(adminSection);
   };
 
   const renderAttractions = (containerId = 'attractionsGrid', activeCategory = 'all') => {
@@ -537,6 +560,30 @@
     const navLinks = document.getElementById('navLinks');
     const navOverlay = document.getElementById('navOverlay');
 
+    // Inject drawer header & quick hotline banner for mobile experience
+    if (navLinks && !navLinks.querySelector('.nav-drawer-header')) {
+      const drawerHeader = create(
+        'div',
+        { className: 'nav-drawer-header' },
+        create('img', { src: 'barangay_tablon_logo.png', alt: 'Barangay Tablon Seal', className: 'nav-drawer-logo' }),
+        create(
+          'div',
+          { className: 'nav-drawer-text' },
+          create('div', { className: 'nav-drawer-title' }, 'Barangay Tablon'),
+          create('div', { className: 'nav-drawer-sub' }, 'Official Community Portal')
+        )
+      );
+      navLinks.insertBefore(drawerHeader, navLinks.firstChild);
+
+      const drawerFooter = create(
+        'div',
+        { className: 'nav-drawer-footer' },
+        create('a', { href: 'tel:911', className: 'drawer-emergency-btn' }, '🚨 Call 911 Emergency'),
+        create('div', { className: 'drawer-contact-line' }, '📞 Hotline: (088) 855-3340')
+      );
+      navLinks.appendChild(drawerFooter);
+    }
+
     const toggleNav = () => {
       if (!hamburger || !navLinks) return;
       hamburger.classList.toggle('active');
@@ -548,7 +595,7 @@
     if (hamburger) hamburger.addEventListener('click', toggleNav);
     if (navOverlay) navOverlay.addEventListener('click', toggleNav);
 
-    document.querySelectorAll('.nav-links a').forEach((link) => {
+    document.querySelectorAll('.nav-links a:not(.drawer-emergency-btn)').forEach((link) => {
       link.addEventListener('click', () => {
         if (navLinks && navLinks.classList.contains('active')) toggleNav();
       });

@@ -23,52 +23,74 @@ export const renderOfficials = (containerId = 'officialsContainer') => {
   // Wipe clean to prevent duplicate entries
   container.innerHTML = '';
 
-  // 1. Punong Barangay (Captain) Card
+  // 1. Punong Barangay (Executive Leader Card)
   const pbCard = create(
     'div',
-    { className: 'featured-card', style: { marginBottom: '2rem' } },
-    create('h3', { style: { fontSize: '1.5rem', marginBottom: '0.5rem', color: 'var(--primary)' } }, `${OFFICIALS_DATA.punongBarangay.title}:`),
-    create('p', { style: { fontSize: '1.3rem', fontWeight: '600', margin: '0' } }, OFFICIALS_DATA.punongBarangay.name)
+    { className: 'official-lead-card' },
+    create('div', { className: 'official-badge' }, '🎖️ Punong Barangay / Chief Executive'),
+    create('h3', { className: 'official-lead-name' }, OFFICIALS_DATA.punongBarangay.name),
+    create('p', { className: 'official-lead-subtitle' }, 'Head of the Barangay Local Government Unit & Sangguniang Barangay')
   );
   container.appendChild(pbCard);
 
-  // Divider
-  const createDivider = () =>
+  // 2. Sangguniang Barangay Members (Kagawads Grid)
+  const kagawadGrid = create('div', { className: 'kagawads-grid' });
+  OFFICIALS_DATA.kagawads.forEach((kagawadName, index) => {
+    const tile = create(
+      'div',
+      { className: 'kagawad-tile' },
+      create('div', { className: 'kagawad-num' }, `Council Member ${index + 1}`),
+      create('div', { className: 'kagawad-name' }, kagawadName)
+    );
+    kagawadGrid.appendChild(tile);
+  });
+
+  const kagawadsSection = create(
+    'div',
+    { className: 'officials-group-card' },
     create(
       'div',
-      { style: { textAlign: 'center', margin: '2rem 0' } },
-      create('hr', { style: { border: 'none', borderTop: '2px solid var(--primary)', width: '50px', margin: '0 auto' } })
-    );
-
-  container.appendChild(createDivider());
-
-  // 2. Sangguniang Barangay Members (Kagawads) Card
-  const kagawadList = create('ul', { style: { listStyle: 'none', padding: '0', margin: '0', fontSize: '1.3rem' } });
-  OFFICIALS_DATA.kagawads.forEach((kagawadName) => {
-    const item = create('p', { style: { margin: '0.5rem 0' } }, kagawadName);
-    kagawadList.appendChild(item);
-  });
-
-  const kagawadsCard = create(
-    'div',
-    { className: 'featured-card', style: { marginBottom: '2rem' } },
-    create('h3', { style: { fontSize: '1.5rem', marginBottom: '0.5rem', color: 'var(--primary)' } }, 'Barangay Kagawads:'),
-    kagawadList
+      { className: 'officials-group-header' },
+      create('span', { className: 'official-badge' }, '🏛️ Legislative Council'),
+      create('h3', { className: 'officials-group-title' }, 'Barangay Kagawads')
+    ),
+    kagawadGrid
   );
-  container.appendChild(kagawadsCard);
+  container.appendChild(kagawadsSection);
 
-  container.appendChild(createDivider());
-
-  // 3. Administrative Officers
+  // 3. Administrative Officers Grid (SK, Secretary, Treasurer)
+  const adminGrid = create('div', { className: 'admin-staff-grid' });
   OFFICIALS_DATA.administrativeStaff.forEach((official) => {
-    const adminCard = create(
+    let icon = '📋';
+    if (official.role.includes('SK')) icon = '⚡';
+    if (official.role.includes('Treasurer')) icon = '💰';
+
+    const staffCard = create(
       'div',
-      { className: 'featured-card', style: { marginBottom: '2rem' } },
-      create('h3', { style: { fontSize: '1.5rem', marginBottom: '0.5rem', color: 'var(--primary)' } }, `${official.role}:`),
-      create('p', { style: { fontSize: '1.3rem', fontWeight: '600', margin: '0' } }, official.name)
+      { className: 'admin-staff-card' },
+      create(
+        'div',
+        { className: 'staff-icon-role' },
+        create('span', { className: 'staff-icon' }, icon),
+        create('span', { className: 'staff-role' }, official.role)
+      ),
+      create('div', { className: 'staff-name' }, official.name)
     );
-    container.appendChild(adminCard);
+    adminGrid.appendChild(staffCard);
   });
+
+  const adminSection = create(
+    'div',
+    { className: 'officials-group-card' },
+    create(
+      'div',
+      { className: 'officials-group-header' },
+      create('span', { className: 'official-badge' }, '👥 Administrative Officers'),
+      create('h3', { className: 'officials-group-title' }, 'Barangay Administration')
+    ),
+    adminGrid
+  );
+  container.appendChild(adminSection);
 };
 
 /**
