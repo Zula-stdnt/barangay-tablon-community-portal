@@ -8,6 +8,7 @@
 <a id="badge-level"><img src="https://img.shields.io/badge/Academic%20Level-3rd%20Year%20%7C%201st%20Semester-0284c7.svg?style=for-the-badge" alt="Academic Level"></a>
 <a id="badge-arch"><img src="https://img.shields.io/badge/Architecture-Vanilla%20ES6%2B%20%7C%20Progressive%20Enhancement-10b981.svg?style=for-the-badge&logo=javascript&logoColor=white" alt="Architecture"></a>
 <a href="https://zula-stdnt.github.io/barangay-tablon-community-portal/"><img src="https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-brightgreen?style=for-the-badge&logo=githubpages&logoColor=white" alt="Live Demo"></a>
+<a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License: MIT"></a>
 <a id="badge-status"><img src="https://img.shields.io/badge/Status-Completed%20%26%20Optimized-success.svg?style=for-the-badge" alt="Status"></a>
 
 <p align="center">
@@ -35,6 +36,7 @@
 7. [Local Setup & Execution Guide](#local-setup--execution-guide)
 8. [Step-by-Step GitHub Deployment Guide](#step-by-step-github-deployment-guide)
 9. [Academic Attribution & Credits](#academic-attribution--credits)
+10. [License](#license)
 
 ---
 
@@ -331,6 +333,22 @@ git push -u origin main
 * **Academic Term:** 3rd Year, 1st Semester
 * **Domain Focus:** Local Government Unit (LGU) Community Web Applications & Citizen Services
 * **Subject Matter:** Barangay Tablon, Cagayan de Oro City, Misamis Oriental, Philippines
+
+---
+
+## <a id="license"></a>📄 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for complete details.
+
+```text
+MIT License
+
+Copyright (c) 2026 Zuriel Anthony Villaluna
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction...
+```
 
 ---
 
